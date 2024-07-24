@@ -6,8 +6,8 @@
       <!-- first column -->
       <div class="space-y-4">
         <div class="border border-red-600 px-2">
-          <p>Example basic point separator: ⬇️</p>
-          <SeparatedDataList :data="formattedPersonInfo" separator="•" />
+          <p>Example default separator: ⬇️</p>
+          <SeparatedDataList :data="formattedPersonInfo" />
         </div>
 
         <div>
@@ -30,17 +30,17 @@
       <div class="space-y-4">
         <div>
           <p>Example with 3 object items: ⬇️</p>
-          <SeparatedDataList :data="formattedPersonInfo3Items" separator="•" />
+          <SeparatedDataList :data="formattedPersonInfo3Items" />
         </div>
 
         <div>
           <p>Example with 2 object items: ⬇️</p>
-          <SeparatedDataList :data="formattedPersonInfo2Items" separator="•" />
+          <SeparatedDataList :data="formattedPersonInfo2Items" />
         </div>
 
         <div>
           <p>Example with 1 object item: ⬇️</p>
-          <SeparatedDataList :data="formattedPersonInfo1Item" separator="•" />
+          <SeparatedDataList :data="formattedPersonInfo1Item" />
         </div>
       </div>
     </div>

@@ -12,7 +12,7 @@ const props = defineProps<{
   separator?: string
 }>()
 
-const separator = props.separator?.startsWith('/src') ? `url('${props.separator}')` : `'${props.separator || '/'}'`
+const separator = props.separator?.startsWith('/src') ? `url('${props.separator}')` : `'${props.separator || '•'}'`
 </script>
 
 <style lang="scss">
