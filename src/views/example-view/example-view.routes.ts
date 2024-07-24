@@ -10,10 +10,19 @@ export const exampleViewRouteNames = {
   exampleLazyLoading: 'exampleLazyLoading',
   exampleAccessibility: 'exampleAccessibility',
   exampleWebWorker: 'exampleWebWorker',
-  exampleCustomCheckbox: 'exampleCustomCheckbox'
+  exampleCustomCheckbox: 'exampleCustomCheckbox',
+  preAssessmentTask: 'preAssessmentTask'
 }
 
 export const exampleViewRoutes: Array<RouteRecordRaw> = [
+  {
+    path: 'pre-assessment-task',
+    name: exampleViewRouteNames.preAssessmentTask,
+    meta: {
+      label: 'pre-assessment task'
+    },
+    component: () => import('./pre-assessment-task/PreAssessmentTask.vue')
+  },
   {
     path: 'general',
     name: exampleViewRouteNames.exampleGeneral,

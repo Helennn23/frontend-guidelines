@@ -10,7 +10,7 @@ import DefaultLayout from '@/layouts/DefaultLayout.vue'
 const defaultLayoutRoutes: RouteRecordRaw = {
   path: '/',
   name: routeNames.rootPage,
-  redirect: { name: routeNames.exampleGeneral },
+  redirect: { name: routeNames.preAssessmentTask },
   component: DefaultLayout,
   children: [
     // list of views that use default layout

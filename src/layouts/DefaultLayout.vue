@@ -25,8 +25,6 @@
         <router-view />
       </div>
     </div>
-
-    <footer class="p-4 bg-red-200 capitalize shrink-0">example footer</footer>
   </div>
 </template>
 
