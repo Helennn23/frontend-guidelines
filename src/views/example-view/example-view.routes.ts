@@ -11,7 +11,8 @@ export const exampleViewRouteNames = {
   exampleAccessibility: 'exampleAccessibility',
   exampleWebWorker: 'exampleWebWorker',
   exampleCustomCheckbox: 'exampleCustomCheckbox',
-  preAssessmentTask: 'preAssessmentTask'
+  preAssessmentTask: 'preAssessmentTask',
+  lifeCoding: 'lifeCoding'
 }
 
 export const exampleViewRoutes: Array<RouteRecordRaw> = [
@@ -22,6 +23,14 @@ export const exampleViewRoutes: Array<RouteRecordRaw> = [
       label: 'pre-assessment task'
     },
     component: () => import('./pre-assessment-task/PreAssessmentTask.vue')
+  },
+  {
+    path: 'life-coding',
+    name: exampleViewRouteNames.lifeCoding,
+    meta: {
+      label: 'life coding'
+    },
+    component: () => import('./life-coding/LifeCoding.vue')
   },
   {
     path: 'general',
